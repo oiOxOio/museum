@@ -51,10 +51,10 @@ function handleJs() {
 
 function handleImages() {
    return gulp.src("images/**")
-       // .pipe(rev())
+       .pipe(rev())
        .pipe(gulp.dest(paths.outPath + "/images"))
-       // .pipe(rev.manifest())
-       // .pipe(gulp.dest(paths.outPath + "/images"));
+       .pipe(rev.manifest())
+       .pipe(gulp.dest(paths.outPath + "/images"));
 }
 
 //压缩html
