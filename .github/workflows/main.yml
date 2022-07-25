@@ -33,6 +33,6 @@ jobs:
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: main # The branch the action should deploy to.
-#         FOLDER:  # The folder the action should deploy.
+        FOLDER: ~/work/museum/museum # The folder the action should deploy.
       
         
