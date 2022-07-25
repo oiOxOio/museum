@@ -87,6 +87,6 @@ function revHtml() {
 exports.default = gulp.series(
 	clean,
 	//同时进行压缩和版本化
-	gulp.parallel(handleCss, handleJs, handleHtml,handleImages),
+	gulp.parallel(handleCss, handleJs, handleHtml/*,handleImages*/),
 	revHtml
 );
