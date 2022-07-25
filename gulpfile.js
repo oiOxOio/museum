@@ -51,10 +51,10 @@ function handleJs() {
 
 function handleImages() {
    return gulp.src("images/**")
-       .pipe(rev())
+       // .pipe(rev())
        .pipe(gulp.dest(paths.outPath + "/images"))
-       .pipe(rev.manifest())
-       .pipe(gulp.dest(paths.outPath + "/images"));
+       // .pipe(rev.manifest())
+       // .pipe(gulp.dest(paths.outPath + "/images"));
 }
 
 //压缩html
@@ -87,6 +87,6 @@ function revHtml() {
 exports.default = gulp.series(
 	clean,
 	//同时进行压缩和版本化
-	gulp.parallel(handleCss, handleJs, handleHtml/*,handleImages*/),
+	gulp.parallel(handleCss, handleJs, handleHtml,handleImages),
 	revHtml
 );
