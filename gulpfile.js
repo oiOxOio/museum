@@ -7,7 +7,6 @@ const rev = require('gulp-rev');//对文件名加MD5后缀
 const revCollector = require('gulp-rev-collector');//替换路径
 const babel = require('gulp-babel');
 const del = require('del');
-const imagemin = require('gulp-imagemin')
 
 //把es6语法解析成es5
 
