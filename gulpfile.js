@@ -83,10 +83,14 @@ function revHtml() {
 		.pipe(gulp.dest(paths.outPath));
 }
 
+function cleanRevFile() {
+	return del(paths.outPath + "/**/rev-manifest.json");
+}
 
 exports.default = gulp.series(
 	clean,
 	//同时进行压缩和版本化
 	gulp.parallel(handleCss, handleJs, handleHtml,handleImages),
-	revHtml
+	revHtml,
+	cleanRevFile
 );
