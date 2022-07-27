@@ -1,6 +1,6 @@
 ## 静态网页 亚历山大美术馆
 
-### 在线演示
+### 在线预览
 [https://museum.5hp.cc](https://museum.5hp.cc)
 
 ### 演示视频
